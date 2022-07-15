@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F232FC6422F0718E00B75149 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F232FC6322F0718E00B75149 /* HealthKit.framework */; };
 		F2E6C33E22D8425100B64FDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6C33D22D8425100B64FDA /* AppDelegate.swift */; };
 		F2E6C34022D8425100B64FDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6C33F22D8425100B64FDA /* ViewController.swift */; };
 		F2E6C34322D8425100B64FDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E6C34122D8425100B64FDA /* Main.storyboard */; };
 		F2E6C34622D8425100B64FDA /* CellExpandCollapseDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2E6C34422D8425100B64FDA /* CellExpandCollapseDemo.xcdatamodeld */; };
 		F2E6C34822D8425300B64FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E6C34722D8425300B64FDA /* Assets.xcassets */; };
 		F2E6C34B22D8425300B64FDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E6C34922D8425300B64FDA /* LaunchScreen.storyboard */; };
+		F2E6C35322D8448500B64FDA /* ExpandCollapseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6C35222D8448500B64FDA /* ExpandCollapseCell.swift */; };
+		F2E6C35522D87F6900B64FDA /* TsetVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6C35422D87F6900B64FDA /* TsetVc.swift */; };
+		F2E6C35722D87FC700B64FDA /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6C35622D87FC700B64FDA /* TestCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F232FC6122F0718E00B75149 /* CellExpandCollapseDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CellExpandCollapseDemo.entitlements; sourceTree = "<group>"; };
+		F232FC6322F0718E00B75149 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		F2E6C33A22D8425100B64FDA /* CellExpandCollapseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellExpandCollapseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E6C33D22D8425100B64FDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2E6C33F22D8425100B64FDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,9 @@
 		F2E6C34722D8425300B64FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2E6C34A22D8425300B64FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2E6C34C22D8425300B64FDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E6C35222D8448500B64FDA /* ExpandCollapseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandCollapseCell.swift; sourceTree = "<group>"; };
+		F2E6C35422D87F6900B64FDA /* TsetVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsetVc.swift; sourceTree = "<group>"; };
+		F2E6C35622D87FC700B64FDA /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F232FC6422F0718E00B75149 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F232FC6222F0718E00B75149 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F232FC6322F0718E00B75149 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2E6C33122D8425100B64FDA = {
 			isa = PBXGroup;
 			children = (
 				F2E6C33C22D8425100B64FDA /* CellExpandCollapseDemo */,
 				F2E6C33B22D8425100B64FDA /* Products */,
+				F232FC6222F0718E00B75149 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,7 @@
 		F2E6C33C22D8425100B64FDA /* CellExpandCollapseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F232FC6122F0718E00B75149 /* CellExpandCollapseDemo.entitlements */,
 				F2E6C33D22D8425100B64FDA /* AppDelegate.swift */,
 				F2E6C33F22D8425100B64FDA /* ViewController.swift */,
 				F2E6C34122D8425100B64FDA /* Main.storyboard */,
@@ -63,6 +83,9 @@
 				F2E6C34922D8425300B64FDA /* LaunchScreen.storyboard */,
 				F2E6C34C22D8425300B64FDA /* Info.plist */,
 				F2E6C34422D8425100B64FDA /* CellExpandCollapseDemo.xcdatamodeld */,
+				F2E6C35222D8448500B64FDA /* ExpandCollapseCell.swift */,
+				F2E6C35422D87F6900B64FDA /* TsetVc.swift */,
+				F2E6C35622D87FC700B64FDA /* TestCell.swift */,
 			);
 			path = CellExpandCollapseDemo;
 			sourceTree = "<group>";
@@ -99,6 +122,11 @@
 				TargetAttributes = {
 					F2E6C33922D8425100B64FDA = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E6C35522D87F6900B64FDA /* TsetVc.swift in Sources */,
+				F2E6C35722D87FC700B64FDA /* TestCell.swift in Sources */,
 				F2E6C34622D8425100B64FDA /* CellExpandCollapseDemo.xcdatamodeld in Sources */,
 				F2E6C34022D8425100B64FDA /* ViewController.swift in Sources */,
+				F2E6C35322D8448500B64FDA /* ExpandCollapseCell.swift in Sources */,
 				F2E6C33E22D8425100B64FDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CellExpandCollapseDemo/CellExpandCollapseDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8AL87N5N3;
 				INFOPLIST_FILE = CellExpandCollapseDemo/Info.plist;
@@ -304,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CellExpandCollapseDemo/CellExpandCollapseDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8AL87N5N3;
 				INFOPLIST_FILE = CellExpandCollapseDemo/Info.plist;
